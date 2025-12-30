@@ -177,3 +177,10 @@ function closeModal() {
     const modal = document.getElementById("image-modal");
     if (modal) modal.remove();
 }
+/** cambio entre imagenes */
+function toExchangeImage(img) {
+  const mainImage = document.getElementById("img_main");
+  if (!mainImage) return;
+
+  mainImage.src = img.src;
+}
